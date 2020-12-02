@@ -109,3 +109,5 @@ def estNormal(carre):
 
 print(estNormal(carre_mag))
 print(estNormal(carre_pas_mag))
+
+

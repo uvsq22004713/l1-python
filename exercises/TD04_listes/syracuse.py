@@ -23,9 +23,34 @@ def testeConjecture(n_max):
         
     return(True)
 
+
+
             
 
 
 
 print(testeConjecture(10000))
     # %%
+def tempsVolListe(n_max):
+    """ Retourne la liste de tous les temps de vol de 1 à n_max """
+    tmax=[]
+    for i in range(1, n_max):
+        tmax.append(tempsVol(i))
+    return tmax
+
+print(tempsVolListe(10000))
+
+
+L = tempsVolListe(10000)
+maxi = max(L)
+a = L.index(maxi)
+print(a+1)
+
+
+def altitude(n):
+    maxalt = [max(syrac(i)) for i in range(2, n)]
+    Maxi1 = max(maxalt)
+    b = maxalt.index(Maxi1)
+    print(b+2)
+
+print(altitude(10000))
